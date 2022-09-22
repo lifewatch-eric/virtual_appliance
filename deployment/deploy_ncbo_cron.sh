@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # OntoPortal Appliance deployment script for ncbo_cron
-# https://github.com/ncbo/ncbo_cron
+# https://github.com/lifewatch-eric/ncbo_cron
 
 source $(dirname "$0")/versions
 COMPONENT=ncbo_cron
@@ -15,7 +15,7 @@ if [ -d ${APP_DIR}/$COMPONENT/bin ]; then
   pushd ${APP_DIR}/$COMPONENT
   git pull
 else 
-  git clone https://github.com/ncbo/${COMPONENT} ${APP_DIR}/${COMPONENT}
+  git clone https://github.com/lifewatch-eric/${COMPONENT} ${APP_DIR}/${COMPONENT}
   pushd ${APP_DIR}/${COMPONENT}
 fi
 git fetch

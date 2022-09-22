@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # OntoPortal Appliance deployment wrapper for ontologies_api
-# https://github.com/ncbo/ontologies_api
+# https://github.com/lifewatch-eric/ontologies_api
 # Script sets up deployment environment and runs capistrano deployment job
 
 source $(dirname "$0")/versions

@@ -24,7 +24,7 @@ if [[ $ONTOLOGIES_LINKED_DATA_RELEASE =~ ^v[0-9.]+ ]] ; then ONTOLOGIES_LINKED_D
 
 echo '=====> Setting up deployment env for UI'
 if [ ! -d bioportal_web_ui ]; then
-  git clone https://github.com/ncbo/bioportal_web_ui bioportal_web_ui
+  git clone https://github.com/lifewatch-eric/bioportal_web_ui bioportal_web_ui
 fi
 pushd bioportal_web_ui
 git fetch
@@ -60,7 +60,7 @@ popd
 
 echo '=====> Setting up deployment env for API'
 if [ ! -d ontologies_api ]; then 
-  git clone https://github.com/ncbo/ontologies_api ontologies_api
+  git clone https://github.com/lifewatch-eric/ontologies_api ontologies_api
 fi
 pushd ontologies_api
 git fetch
@@ -77,7 +77,7 @@ bundle install --binstubs
 popd
 
 if [ ! -d ${VIRTUAL_APPLIANCE_REPO}/appliance_config/ontologies_linked_data ]; then
-  git clone https://github.com/ncbo/ontologies_linked_data ${VIRTUAL_APPLIANCE_REPO}/appliance_config/ontologies_linked_data
+  git clone https://github.com/lifewatch-eric/ontologies_linked_data ${VIRTUAL_APPLIANCE_REPO}/appliance_config/ontologies_linked_data
 fi
 pushd ${VIRTUAL_APPLIANCE_REPO}/appliance_config/ontologies_linked_data
 git fetch

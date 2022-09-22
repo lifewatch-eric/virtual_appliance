@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # OntoPortal Appliance deployment wrapper for OntoPortal Web UI
-# https://github.com/ncbo/bioportal_web_ui
+# https://github.com/lifewatch-eric/bioportal_web_ui
 # Script sets up deployment environment and runs capistrano deployment job
 
 #source versions
